@@ -10,8 +10,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register",
     "gulp": "./node_modules/.bin/gulp --reporters coffee-script",
-    "gulp-dist": "./node_modules/.bin/gulp --reporters coffee-script dist",
-    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register"
+    "gulp-dist": "./node_modules/.bin/gulp --reporters coffee-script dist"
   },
   "devDependencies": {
     "chai": "^1.9.2",
@@ -29,6 +28,24 @@
     "mocha": "^2.0.0",
     "require-dir": "^0.1.0"
   },
-  "author": "M. Maxwell Watson",
+  "contributors": [
+    {
+      "name": "M. Maxwell Watson",
+      "email": "hi@mmwtsn.com"
+    },
+    {
+      "name": "Paat Sinsuwan",
+      "email": "paat@sinsuwan.com"
+    },
+    {
+      "name": "Vincent OuYoung"
+    },
+    {
+      "name": "Sheryl Morgan"
+    },
+    {
+      "name": "Vincente Golveo"
+    }
+  ],
   "license": "MIT"
 }

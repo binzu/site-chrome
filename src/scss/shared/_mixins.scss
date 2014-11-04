@@ -1,4 +1,7 @@
 @mixin break-above($point) {
+  @if $point == small {
+    @media (max-width: 640px) { @content; }
+  }
   @if $point == mobile {
     @media (min-width: 640px) { @content; }
   }

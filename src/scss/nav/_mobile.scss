@@ -5,7 +5,7 @@
   width: 250px;
   height: 100%;
   background: #333;
-  overflow: scroll;
+  overflow-y: auto;
   z-index: 100;
   background: $secondary-blue;
   @include transition(all ease-out 0.4s);
@@ -17,12 +17,16 @@
     width: 20px;
   }
 
+  .test-class{
+    display: none;
+  }
+
   .mobile-link:first-child {
     margin-bottom: 20px;
   }
 
   .mobile-link > a {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .mobile-link.local {
@@ -45,14 +49,14 @@
     }
 
     ul li a{
-      margin-left: 0.5em;
+      margin-left: 7.2px;
     }
   }
 
   .nested-mobile-link.active {
     border-bottom: 1px solid #004a71;
     ul li a{
-      margin-left: 1em;
+      margin-left: 14.4px;
     }
   }
 
@@ -127,12 +131,19 @@
   li a {
     display: block;
     padding: 8px 20px;
+    text-decoration: none;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
   }
 
   a {
     color: $accent-blue;
     font-family: Helvetica Neue, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 14.4px;
     font-weight: 300;
     letter-spacing: 0.5px;
   }

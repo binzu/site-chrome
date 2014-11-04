@@ -98,6 +98,7 @@
   .desktop-link,
   .ibm-logo-container {
     height: $desktop-nav-height;
+    overflow: hidden;
   }
 
   .ibm-logo-container {
@@ -105,6 +106,12 @@
     float: left;
     width: 60px;
     margin-right: 5px;
+    &:hover {
+      background: $secondary-blue;
+      .ibm-logo {
+        background-color: $secondary-blue;
+      }
+    }
 
     @include break-above(desktop) {
 //      background: $alt-blue;
@@ -148,7 +155,9 @@
   }
 
   ul {
-    padding: 0;
+    &.desktop-links {
+      padding: 0;
+    }
   }
 
   li {
@@ -179,6 +188,7 @@
     border-right: 1px solid $border-blue;
     position: absolute;
     display: none;
+    z-index: 99999;
     padding: 20px 0 30px;
     background-color: $secondary-blue;
 //    overflow: hidden;
